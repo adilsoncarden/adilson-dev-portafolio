@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reserva de Hotel</title>
+    </head>
+    <body>
+        <form action="">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" /><br />
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required/><br />
+
+            <label for="fecha_entrada">Fecha entrada</label>
+            <input type="date" name="fecha_entrada" id="fecha_entrada" /><br />
+
+            <label for="fecha_salida">Fecha salida</label>
+            <input type="date" name="fecha_salida" id="fecha_salida" /><br />
+
+            <label for="tipo_habitacion">Tipo de habitación</label>
+            <select name="tipo_habitacion" id="tipo_habitacion">
+                <option value="estandar">Estándar</option>
+                <option value="superior">Superior</option>
+                <option value="suite_junior">Suite Júnior</option>
+                <option value="suite_presidencial">Suite Presidencial</option>
+                <option value="estudio">Estudio</option></select><br />
+
+            <input type="checkbox" name="aceptar_politicas" id="aceptar_politicas" required/>Aceptar políticas<br />
+
+            <button type="submit">Reservar</button>
+        </form>
+    </body>
+</html>
