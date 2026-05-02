@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sistema Administrativa V2</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Header = Parte superior -->
+        <header>
+            <h1>Empresa SAC - Panel Administrativo</h1>
+        </header>
+
+        <!-- Contenedor principal -->
+        <div class="container">
+            <!-- Sidebar = Menu lateral -->
+            <aside>
+                <h2>Menú</h2>
+
+                <nav>
+                    <p>📊 Dashboard</p>
+                    <p>👥 Empleados</p>
+                    <p>💰 Ventas</p>
+                    <p>📁 Reportes</p>
+                    <p>⚙ Configuración</p>
+                </nav>
+            </aside>
+
+            <!-- Main = Zona Principal-->
+            <main>
+                <!-- Cards estadísticas -->
+                <section class="cards">
+                    <div class="card">
+                        <h3>Empleados</h3>
+                        <p>42</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Ventas</h3>
+                        <p>$12,500</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Proyectos</h3>
+                        <p>8</p>
+                    </div>
+                </section>
+
+                <!-- Tabla Empleados-->
+                <section>
+                    <h2>Lista de Empleados</h2>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Rol</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Martin</td>
+                                <td>Ventas</td>
+                                <td>Activo</td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>Maria</td>
+                                <td>Diseño</td>
+                                <td>Vacaciones</td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Juan</td>
+                                <td>Soporte</td>
+                                <td>Activo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Formulario -->
+                <section>
+                    <h2>Registrar Empleado</h2>
+
+                    <form action="">
+                        <label for="nombr">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required />
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required />
+
+                        <label for="rol">Rol</label>
+                        <select name="rol" id="rol">
+                            <option value="ventas">Ventas</option>
+                            <option value="diseño">Diseño</option>
+                            <option value="soporte">Soporte</option>
+                        </select>
+
+                        <button type="submit">Guardar</button>
+                    </form>
+                </section>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            © 2026 Empresa SAC
+        </footer>
+
+
+    </body>
+</html>

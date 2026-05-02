@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sistema Administrativo</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>Sistema Administrativo Empresarial</header>
+
+        <div class="container">
+            <aside>
+                <h3>Menú</h3>
+                <p>Dashboard</p>
+                <p>Estadísticas</p>
+                <p>Empleados</p>
+            </aside>
+
+            <main>
+                <!-- Ver empleados en la tabla -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre Empleado</th>
+                            <th>Rol</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Martin</td>
+                            <td>Vendedor</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Maria</td>
+                            <td>Vendedora</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Juan</td>
+                            <td>Cajero</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Miguel</td>
+                            <td>Almacenero</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Registrar Empleados -->
+                <h4>Registrar Empleado</h4>
+                <form action="">
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="rol">Rol</label>
+                    <select name="rol" id="rol" required>
+                        <option value="diseñador">Diseñador</option>
+                        <option value="soporte">Soporte</option>
+                        <option value="ventas">Ventas</option>
+                    </select>
+
+                    <button type="submit">Registrar</button>
+                </form>
+            </main>
+        </div>
+
+        <footer>© Empresa SAC 2026</footer>
+    </body>
+</html>
